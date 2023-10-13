@@ -1,15 +1,15 @@
 
 
-addEventListener("scroll", () => {console.log(window.scrollY)})
+//addEventListener("scroll", () => {console.log(window.scrollY)})
 
 
 const fadeBackground = () => {
+    let opacityChangeElement = document.getElementById("opacityOnBackground");
     if (window.scrollY > 120) {
-        //change the background opacity to 1
-        document.body.style.opacity = 1
-
+        console.log(opacityChangeElement.style.opacity);
+        opacityChangeElement.style.opacity = 1;
     } else {
-        document.body.classList.remove("fade-out")
+        opacityChangeElement.style.opacity = 0;
     }
 }
 addEventListener("scroll", fadeBackground)

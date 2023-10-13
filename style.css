@@ -1,5 +1,4 @@
 html {
-    background-color: rgb(91, 91, 91);
     color: #fff;
     font-family: Apercu Pro,sans-serif;
     font-weight: 200;
@@ -9,9 +8,6 @@ html {
 body {
     padding: 20px;
     margin: 0px;
-    background-image: url(./images/backgroundMapPlaceholder.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 nav {
@@ -34,7 +30,28 @@ nav div {
     padding: 0px 10px;
 }
 
-.container {
+
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-repeat:repeat-x;
+    background-size: cover;
+    background-image: url(./images/backgroundMapPlaceholder.webp);
+}
+
+#opacityOnBackground {
+    background-color: rgba(34, 4, 134);
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.headerContainer {
     padding: 90px 20px;
     line-height: 3.5em;
 }
