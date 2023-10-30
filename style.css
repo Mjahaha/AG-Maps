@@ -1,5 +1,6 @@
 html {
     color: #fff;
+    background-color: rgb(42, 42, 42);
     font-family: Apercu Pro,sans-serif;
     font-weight: 200;
     font-size: 22px;
@@ -20,6 +21,10 @@ lightest
 body {
     padding: 20px;
     margin: 0px;
+}
+
+a {
+    color: #fff;
 }
 
 nav {
