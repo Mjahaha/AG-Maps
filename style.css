@@ -5,6 +5,18 @@ html {
     font-size: 22px;
 }
 
+/* 
+darkest
+
+rgb(0, 80, 115)
+rgb(16, 125, 172)
+rgb(24, 154, 211)
+rgb(30, 187, 215)
+rgb(113, 199, 236)
+
+lightest
+*/
+
 body {
     padding: 20px;
     margin: 0px;
@@ -44,7 +56,8 @@ nav div {
 }
 
 #opacityOnBackground {
-    background-color: rgba(34, 4, 134);
+    background-color: rgba(24, 154, 211);
+    opacity: 0;
     width: 100%;
     height: 100%;
     transition: all 1s ease-in-out;
@@ -53,6 +66,7 @@ nav div {
 .headerContainer {
     padding: 90px 20px;
     line-height: 5.5em;
+    color: rgb(255, 255, 255);
 }
 
 #headingText {
@@ -75,19 +89,18 @@ nav div {
 
 /* item is a class for the individual items in the showcase */
 .item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    position: relative;
     color: black;
-    padding: 20px;
+    padding: 0px;
     margin: 20px;
     min-width: 34%;
     height: 300px;
     box-sizing: border-box;
     background-image: url(./images/worldmap.jpg);
-    border-radius: 10px;
     transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .one {
@@ -97,6 +110,7 @@ nav div {
 .itemText {
     opacity: 0;
     transition: all 0.5s ease-in-out;
+    z-index: 3;
 }
 
 .itemTitle {
@@ -105,4 +119,29 @@ nav div {
 
 .itemDescription {
     font-size: 16px;
+}
+
+.itemBackground {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background-color: rgb(113, 199, 236);
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.itemTextFlexbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 3;
+    text-align: center;
 }
