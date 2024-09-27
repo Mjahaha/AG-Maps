@@ -36,8 +36,8 @@ nav {
     justify-content: flex-end;
     align-items: right;
     padding: 5px;
-    margin: 0;
-    width: 100%;
+    margin: 0px 5px;
+    width: 95%;
     height: 5vh;
     box-sizing: border-box;
     z-index: 10;
